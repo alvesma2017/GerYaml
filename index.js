@@ -24,7 +24,7 @@ app.get("/geraryaml_pod",(req,res) => {
 
 })
 //recebe os dados do form por isso é POST
-app.post("/salvadados",(req,res) => {
+app.post("/gerapod",(req,res) => {
 
     var apiversion = req.body.apiversion
     var kind = req.body.kind
@@ -37,7 +37,7 @@ app.post("/salvadados",(req,res) => {
    
 
     //res.send("Dados salvos:" + titulo + " " + descricao)
-    res.render("salvadados",{
+    res.render("gerapod",{
         apiversion: apiversion,
         kind: kind,
         name: name,
