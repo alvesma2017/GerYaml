@@ -1,0 +1,13 @@
+
+apiVersion: v2
+kind: Pod
+metadata:
+  name: bandicoot.default.svc.cluster.local.
+spec:
+  container:
+   - image: teste
+     name: teste
+     ports:
+      - containerport: 8080
+        name: containe1
+        protocol: tcp

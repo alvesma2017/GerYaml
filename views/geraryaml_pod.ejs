@@ -1,0 +1,106 @@
+<%- include ('partials/header') %>
+<body>
+    <%- include ('partials/navbar') %>
+  <div class="container">
+    <div class="card" id="formulario-pergunta">
+      <div class="card-header">
+        <h3>POD.yaml:</h3>
+      </div>  
+        <div class="card-body">
+            <hr>
+            <form method="post" action="/salvadados">
+        <table class="table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">CHAVE:</th>
+                <th scope="col">VALOR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>apiVersion:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="apiversion"></td>
+           
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>kind:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="kind"></td>
+             
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>metadata:</td>
+                <td>&nbsp;</td>
+
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>&nbsp;&nbsp;&nbsp;name:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="name"></td>
+
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>spec:</td>
+                <td>&nbsp;</td>
+
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>&nbsp;&nbsp;&nbsp;container:</td>
+                <td>&nbsp;</td>
+
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>&nbsp;&nbsp;&nbsp;- image:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="imag"></td>
+   
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="nimag"></td>
+
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ports:</td>
+                <td>&nbsp;</td>
+
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- containerport: </td>
+                <td><input type="text" placeholder="valor" class="form-control" name="cport"> </td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="ncont"> </td>
+              
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protocol:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="prot"> </td>
+                
+              </tr>
+   
+              <tr> 
+                <th scope="row"></th>
+                <td><button class="btn-primary">Gerar YAML (Pod)</button></td>
+                <td> </td>
+            </tr> 
+            </tbody>
+          </table>
+          </form>
+        </div>
+    </div>
+  </div>
+</body>
+<%- include ('partials/footer') %>

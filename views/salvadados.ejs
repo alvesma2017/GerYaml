@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Guia de Perguntas e Respostas</title>
+    <title>GeraYAML</title>
 </head>
 <body>
-    <h1>Guia Perguntas</h1>
+    <h1>Pod (simples):</h1>
     <br>
    
-    aplication: <%= titulo %> <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;kind: <%= descricao %> <br>
-
-   
-    
-    <br>
+    <b>apiVersion:</b> <%= apiversion %> <br>
+    <b>kind:</b> <%= kind %> <br>
+    <b>metadata:</b><br>
+    &nbsp;&nbsp;<b>name:</b> <%= name %> <br>
+    <b>spec:</b><br>
+    &nbsp;&nbsp;<b>container:</b><br>
+    &nbsp;&nbsp;&nbsp;<b>- image:</b> <%= imag %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name:</b> <%= nimag %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ports:</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- containerport:</b> <%= cport %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name:</b> <%= ncont %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>protocol:</b> <%= prot %><br>
     
 </body>
 </html>
