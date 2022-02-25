@@ -1,0 +1,23 @@
+{
+  "name": "geryaml",
+  "version": "1.0.0",
+  "description": "Sistema para gerar arquivos no formato YAML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvesma2017/GerYaml.git"
+  },
+  "author": "Marcelo Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvesma2017/GerYaml/issues"
+  },
+  "homepage": "https://github.com/alvesma2017/GerYaml#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
