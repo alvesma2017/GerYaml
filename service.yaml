@@ -1,0 +1,16 @@
+
+apiVersion: 1
+kind: Service
+metadata:
+  labels:
+    app: app1_2
+  name: testeteste
+  namespace: testenamespace
+spec:
+  type: 1dsfdf
+  ports:
+  - name: 1adf
+    port: dffdsf
+    targetPort: fdffs
+  selector:
+    app: dsff

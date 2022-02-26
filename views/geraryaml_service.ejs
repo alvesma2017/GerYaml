@@ -1,0 +1,123 @@
+<%- include ('partials/header') %>
+<body>
+    <%- include ('partials/navbar') %>
+  <div class="container">
+    <div class="card" id="formulario-pergunta">
+      <div class="card-header">
+        <h3>SERVICE.yaml:</h3>
+      </div>  
+        <div class="card-body">
+            <hr>
+            <form method="post" action="/geraservice">
+        <table class="table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">CHAVE:</th>
+                <th scope="col">VALOR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>apiVersion:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="sapiversion"></td>
+           
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>kind:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="skind"></td>
+             
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>metadata:</td>
+                <td>&nbsp;</td>
+
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>&nbsp;&nbsp;labels:</td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;app:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="sapp"></td>
+
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>&nbsp;&nbsp;name:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="sname"></td>
+
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>&nbsp;&nbsp;namespace:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="snamespace"></td>
+   
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>spec:</td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>&nbsp;&nbsp;type:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="stype"></td>
+
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>&nbsp;ports: </td>
+                <td> </td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>&nbsp;&nbsp;- name:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="nport"> </td>
+              
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;port:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="port"> </td>
+                
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;targetport:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="tport"> </td>
+                
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>&nbsp;&nbsp;selector:</td>
+                <td> </td>
+                
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;app:</td>
+                <td><input type="text" placeholder="valor" class="form-control" name="ssapp"> </td>
+                
+              </tr>
+              <tr> 
+                <th scope="row"></th>
+                <td><button class="btn-primary">Gerar YAML (Service)</button></td>
+                <td> </td>
+            </tr> 
+            </tbody>
+          </table>
+          </form>
+        </div>
+    </div>
+  </div>
+</body>
+<%- include ('partials/footer') %>

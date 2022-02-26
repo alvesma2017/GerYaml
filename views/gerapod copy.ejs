@@ -1,0 +1,22 @@
+<%- include ('partials/header') %>
+
+<body>
+    <%- include ('partials/navbar') %>
+    <h1>Pod (simples):</h1>
+    <br>
+   
+    <b>apiVersion:</b> <%= apiversion %> <br>
+    <b>kind:</b> <%= kind %> <br>
+    <b>metadata:</b><br>
+    &nbsp;&nbsp;<b>name:</b> <%= name %> <br>
+    <b>spec:</b><br>
+    &nbsp;&nbsp;<b>container:</b><br>
+    &nbsp;&nbsp;&nbsp;<b>- image:</b> <%= imag %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name:</b> <%= nimag %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ports:</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- containerport:</b> <%= cport %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name:</b> <%= ncont %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>protocol:</b> <%= prot %><br>
+    
+</body>
+<%- include ('partials/footer') %>

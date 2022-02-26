@@ -1,0 +1,25 @@
+<%- include ('partials/header') %>
+
+<body>
+    <%- include ('partials/navbar') %>
+    <h1>Pod (simples):</h1>
+    <br>
+   
+    <b>apiVersion: </b> <%= sapiversion %> <br>
+    <b>kind: </b> <%= skind %> <br>
+    <b>metadata:</b><br>
+    &nbsp;&nbsp;<b>labels: </b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b>app: </b> <%= sapp %> <br>
+    &nbsp;&nbsp;<b>name: </b> <%= sname%><br>
+    &nbsp;&nbsp;<b>namespace: </b> <%= snamespace %><br>
+    <b>spec:</b><br>
+    &nbsp;&nbsp;<b>type: </b><%= stype %><br>
+    &nbsp;&nbsp;<b>ports: </b><br>
+    &nbsp;&nbsp;<b>- name: </b> <%= nport %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b>port: </b><%= port %><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b>targetPort: </b> <%= tport %><br>
+    &nbsp;&nbsp;<b>selector: </b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b>app: </b> <%= ssapp %><br>
+    
+</body>
+<%- include ('partials/footer') %>
