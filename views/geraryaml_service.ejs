@@ -69,8 +69,12 @@
               <tr>
                 <th scope="row">9</th>
                 <td>&nbsp;&nbsp;type:</td>
-                <td><input type="text" placeholder="valor" class="form-control" name="stype"></td>
-
+                <!-- <td><input type="text" placeholder="valor" class="form-control" name="stype"></td> -->
+                  <td><select name="stype" id="stype">
+                    <option value="ClusterIp">ClusterIp</option>
+                    <option value="NodePort">NodePort</option>
+                    <option value="LoadBalancer">LoadBalancer</option>
+                  </select></td>
               </tr>
               <tr>
                 <th scope="row">10</th>
