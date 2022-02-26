@@ -1,13 +1,13 @@
 
-apiVersion: v2
+apiVersion: v1
 kind: Pod
 metadata:
-  name: bandicoot.default.svc.cluster.local.
+  name: mosto
 spec:
   container:
-   - image: teste
-     name: teste
+   - image: mosto/js
+     name: mosto-pod
      ports:
-      - containerport: 8080
-        name: containe1
-        protocol: tcp
+      - containerport: 8090
+        name: mosto
+        protocol: TCP

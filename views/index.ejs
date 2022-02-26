@@ -1,25 +1,47 @@
 <%- include ('partials/header') %>
 <body>
     <%- include ('partials/navbar') %>
-    <div class="container">
+    <!-- <div class="container">
         <hr>
         <h1>Perguntas</h1>
         <hr>
         <a href="/perguntar" class="btn btn-primary">Perguntar</a>
         <hr>
-        <% perguntas.forEach(pergunta => { %>
+       
         <br>
             <div class="card"> 
                 <div class="card-body">
-            <h3><%= pergunta.titulo%></h3>
+          
         </div>
         <div class="card-footer">
-           <a href="/perguntas/<%= pergunta.id %>"> <button class="btn btn-primary">Responder</button> </a>
+         
         </div>
     </div>
-        <%  }) %>
+     
 
-    </div>
+    </div> -->
+<br>
+<br>
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pod Simples</h5>
+              <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+              <a href="geraryaml_pod" class="btn btn-primary">Gerar Manifesto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Título especial</h5>
+              <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+              <a href="#" class="btn btn-primary">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 </body>
 <%- include ('partials/footer') %>

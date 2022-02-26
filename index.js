@@ -3,6 +3,7 @@ const app = express()
 const bodyparser = require('body-parser')
 
 
+
 //setando a engine EJS para uso
 app.set('view engine','ejs')
 //definindo para usar arquivos estaticos, tipo: css

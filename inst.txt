@@ -9,3 +9,5 @@
 //criar pasta VIEWS para colocar arquivos EJS
 //criar pasta PUBLIC para colocar arquivos estaticos (CSS/JS/IMG)
 // as pastas CSS e JS do Boostrap (baixar no site) devem estar abaixo da PUBLIC
+// instalar o demon globalmernte, executando o comando abaixo
+    *npm install demon --global
