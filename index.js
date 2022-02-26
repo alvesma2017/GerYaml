@@ -4,6 +4,7 @@ const bodyparser = require('body-parser')
 
 
 
+
 //setando a engine EJS para uso
 app.set('view engine','ejs')
 //definindo para usar arquivos estaticos, tipo: css
@@ -92,3 +93,6 @@ app.post("/geraservice",(req,res)=>{
 
 app.listen(3000,()=>{console.log("servidor ok")
 })
+
+
+

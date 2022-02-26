@@ -2,9 +2,30 @@
 
 <body>
     <%- include ('partials/navbar') %>
-    <h1>Pod (simples):</h1>
+
     <br>
-   
+    <div class="row">
+        <div class="col-sm-6" id="conteudo">
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Pod (Simples):</h5>
+    <br>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <p><button onclick="copy()">selecionar e copiar</button></p><br>
+    
+    <script>
+        
+        function copy() {
+
+        var content = document.getElementById('conteudo');
+
+        content.select('conteudo');
+        document.execCommand('copy');
+
+        alert("Copied!");
+        }
+      </script> -->
+
     <b>apiVersion:</b> <%= apiversion %> <br>
     <b>kind:</b> <%= kind %> <br>
     <b>metadata:</b><br>
@@ -17,6 +38,24 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>- containerport:</b> <%= cport %><br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name:</b> <%= ncont %><br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>protocol:</b> <%= prot %><br>
+    <br>
+
+ 
+            </div>
+        </div>
+    </div>
+
+
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Pod</h5>
+        <p class="card-text">Um pod representa um conjunto de containers de aplicação e volumes executando no mesmo ambiente.<br>
+             Os Pods - e não os containers - são o menor artefato possível de implantação em um cluster Kubernets.</p>
+      </div>
+    </div>
+  </div>
+</div>
     
 </body>
 <%- include ('partials/footer') %>

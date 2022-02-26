@@ -2,9 +2,14 @@
 
 <body>
     <%- include ('partials/navbar') %>
-    <h1>Pod (simples):</h1>
+<br>
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Service:</h5>
     <br>
-   
+
     <b>apiVersion: </b> <%= sapiversion %> <br>
     <b>kind: </b> <%= skind %> <br>
     <b>metadata:</b><br>
@@ -20,6 +25,19 @@
     &nbsp;&nbsp;&nbsp;&nbsp;<b>targetPort: </b> <%= tport %><br>
     &nbsp;&nbsp;<b>selector: </b><br>
     &nbsp;&nbsp;&nbsp;&nbsp;<b>app: </b> <%= ssapp %><br>
-    
+            </div>
+        </div>
+    </div>
+
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Service</h5>
+        <p class="card-text">Um servico serve para........</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 <%- include ('partials/footer') %>
