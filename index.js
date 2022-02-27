@@ -36,7 +36,7 @@ app.post("/gerapod",(req,res) => {
     var cport = req.body.cport
     var ncont = req.body.ncont
     var prot = req.body.prot
-   
+  
 
     //res.send("Dados salvos:" + titulo + " " + descricao)
     res.render("gerapod",{
@@ -48,11 +48,10 @@ app.post("/gerapod",(req,res) => {
         cport: cport,
         ncont: ncont,
         prot: prot
-   
-
     })
 
 })
+
 app.get("/geraryaml_service",(req,res) => {
 
     res.render("geraryaml_service")
@@ -93,6 +92,5 @@ app.post("/geraservice",(req,res)=>{
 
 app.listen(3000,()=>{console.log("servidor ok")
 })
-
 
 
