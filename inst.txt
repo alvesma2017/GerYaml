@@ -5,6 +5,8 @@
     * npm install express --save
 //executar o comando abaixo para instalar o EJS
     * npm install ejs --save
+//executar o comando abaixo para instalar o body-parser
+    * npm install body-parser --save
 //entrar no arquivo package.json para conferir se foram instalados
 //criar pasta VIEWS para colocar arquivos EJS
 //criar pasta PUBLIC para colocar arquivos estaticos (CSS/JS/IMG)
