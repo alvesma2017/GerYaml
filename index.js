@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
 const bodyparser = require('body-parser')
-
-
+const manifestopodsimples = require("./manifesto_pod/PodSimplesController")
+const manifestopodsimplessave = require("./manifesto_pod/PodSimplesControllerSave")
+const manifestoservicesimples = require("./manifesto_service/ServiceSimplesController")
+const manifestoservicesimplessave = require("./manifesto_service/ServiceSimplesControllerSave")
 
 
 //setando a engine EJS para uso
@@ -20,43 +22,21 @@ app.get("/",(req,res) => {
 
 })
 
-app.get("/geraryaml_pod",(req,res) => {
+    app.use("/", manifestopodsimples)
 
-    res.render("geraryaml_pod")
+    app.use("/", manifestopodsimplessave)
 
-})
-//recebe os dados do form por isso é POST
-app.post("/gerapod",(req,res) => {
+    app.use("/", manifestoservicesimples)
 
-    var apiversion = req.body.apiversion
-    var kind = req.body.kind
-    var name = req.body.name
-    var imag = req.body.imag
-    var nimag = req.body.nimag
-    var cport = req.body.cport
-    var ncont = req.body.ncont
-    var prot = req.body.prot
-  
+    app.use("/", manifestoservicesimplessave)
 
-    //res.send("Dados salvos:" + titulo + " " + descricao)
-    res.render("gerapod",{
-        apiversion: apiversion,
-        kind: kind,
-        name: name,
-        imag: imag,
-        nimag: nimag,
-        cport: cport,
-        ncont: ncont,
-        prot: prot
-    })
 
-})
 
-app.get("/geraryaml_service",(req,res) => {
+// app.get("/geraryaml_service",(req,res) => {
 
-    res.render("geraryaml_service")
+//     res.render("geraryaml_service")
 
-})
+// })
 
 app.post("/geraservice",(req,res)=>{
 
@@ -83,8 +63,6 @@ app.post("/geraservice",(req,res)=>{
         port: port,
         tport: tport,
         ssapp: ssapp
-
-
 
     })
 
