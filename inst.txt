@@ -13,3 +13,9 @@
 // as pastas CSS e JS do Boostrap (baixar no site) devem estar abaixo da PUBLIC
 // instalar o demon globalmernte, executando o comando abaixo
     *npm install demon --global
+
+
+    docker build -t marcelo/geryaml .
+    docker images
+    docker run -p 49160:3000 -d marcelo/geryaml
+    docker ps
